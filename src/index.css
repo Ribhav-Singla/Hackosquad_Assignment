@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-indigo-50 text-gray-800;
+  }
+}
+
+@layer components {
+  input {
+    @apply outline-none;
+  }
+}
+
+@layer utilities {
+  .transition-strength {
+    transition: width 0.5s ease-out, background-color 0.5s ease;
+  }
+}
